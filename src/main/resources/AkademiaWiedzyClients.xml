@@ -1,0 +1,70 @@
+<clients>
+	<client date="2016-11-21">
+		<inputParam name="first-name" value="Janina" />
+		<inputParam name="last-name" value="Kowalska" />
+		<inputParam name="sex" value="F" />
+		<inputParam name="birth-date" value="1983-11-25" />
+		<inputParam name="citizenship" value="Polskie" />
+		<inputParam name="pesel" value="83112500420" />
+		<inputParam name="passport" value="WDF567844" />
+		<inputParam name="mobile-phone" value="555123123" />
+		<inputParam name="home-phone" value="226786543" />
+		<inputParam name="email" value="jkowalska@test" />
+		<inputParam name="correspondence-street" value="Marszałkowska" />
+		<inputParam name="correspondence-home" value="12" />
+		<inputParam name="correspondence-postal-code" value="00-200" />
+		<inputParam name="correspondence-city" value="Warszawa" />
+		<inputParam name="correspondence-country" value="Polska" />	
+	</client>
+	<client date="2016-11-20">
+		<inputParam name="first-name" value="Grzegorz" />
+		<inputParam name="last-name" value="Piękny" />
+		<inputParam name="sex" value="M" />
+		<inputParam name="birth-date" value="1993-11-15" />
+		<inputParam name="citizenship" value="Polskie" />
+		<inputParam name="pesel" value="93111500420" />
+		<inputParam name="passport" value="WDF567844" />
+		<inputParam name="mobile-phone" value="555123123" />
+		<inputParam name="home-phone" value="226786543" />
+		<inputParam name="email" value="gpiekny@test" />
+		<inputParam name="correspondence-street" value="Dolna" />
+		<inputParam name="correspondence-home" value="15" />
+		<inputParam name="correspondence-postal-code" value="00-200" />
+		<inputParam name="correspondence-city" value="Lublin" />
+		<inputParam name="correspondence-country" value="Polska" />	
+	</client>
+	<client date="2016-11-19">
+		<inputParam name="first-name" value="Janina" />
+		<inputParam name="last-name" value="Kowalska" />
+		<inputParam name="sex" value="F" />
+		<inputParam name="birth-date" value="1983-11-25" />
+		<inputParam name="citizenship" value="Polskie" />
+		<inputParam name="pesel" value="83112500420" />
+		<inputParam name="passport" value="WDF567844" />
+		<inputParam name="mobile-phone" value="555123123" />
+		<inputParam name="home-phone" value="226786543" />
+		<inputParam name="email" value="jkowalska@test" />
+		<inputParam name="correspondence-street" value="Francuska" />
+		<inputParam name="correspondence-home" value="14" />
+		<inputParam name="correspondence-postal-code" value="00-600" />
+		<inputParam name="correspondence-city" value="Radom" />
+		<inputParam name="correspondence-country" value="Polska" />	
+	</client>
+	<client date="2016-11-18">
+		<inputParam name="first-name" value="Ewa" />
+		<inputParam name="last-name" value="Nowak" />
+		<inputParam name="sex" value="F" />
+		<inputParam name="birth-date" value="1983-11-25" />
+		<inputParam name="citizenship" value="Polskie" />
+		<inputParam name="pesel" value="83112500420" />
+		<inputParam name="passport" value="WDF567844" />
+		<inputParam name="mobile-phone" value="456987342" />
+		<inputParam name="home-phone" value="228765498" />
+		<inputParam name="email" value="enowak@test" />
+		<inputParam name="correspondence-street" value="Radomska" />
+		<inputParam name="correspondence-home" value="13" />
+		<inputParam name="correspondence-postal-code" value="00-300" />
+		<inputParam name="correspondence-city" value="Sosnowiec" />
+		<inputParam name="correspondence-country" value="Polska" />	
+	</client>
+</clients>
