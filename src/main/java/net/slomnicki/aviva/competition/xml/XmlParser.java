@@ -1,4 +1,4 @@
-package net.slomnicki.aviva.competition;
+package net.slomnicki.aviva.competition.xml;
 
 import net.slomnicki.aviva.competition.error.XmlParseException;
 import net.slomnicki.aviva.competition.model.Clients;

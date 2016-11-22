@@ -2,6 +2,7 @@ package net.slomnicki.aviva.competition;
 
 import net.slomnicki.aviva.competition.error.XmlParseException;
 import net.slomnicki.aviva.competition.model.Clients;
+import net.slomnicki.aviva.competition.xml.XmlParser;
 import org.junit.Before;
 import org.junit.Test;
 
