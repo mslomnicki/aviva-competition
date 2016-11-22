@@ -14,10 +14,10 @@ import java.util.List;
 @XmlRootElement(name = "client")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Client {
-    @XmlAttribute(name = "date")
+    @XmlAttribute
     private String date;
 
-    @XmlElements(@XmlElement(name = "inputParam"))
+    @XmlElement(name = "inputParam")
     private List<InputParam> inputParamList;
 
     @Override
