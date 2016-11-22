@@ -3,6 +3,8 @@ package net.slomnicki.aviva.competition;
 import net.slomnicki.aviva.competition.error.XmlParseException;
 import net.slomnicki.aviva.competition.model.Clients;
 
+import java.io.File;
+
 /**
  * Main application class
  *
@@ -18,7 +20,7 @@ public class MainApp {
         }
         XmlParser parser = new XmlParser();
         try {
-            Clients clients = parser.readAndParseXmlFile(args[0]);
+            Clients clients = parser.readAndParseXmlFile(new File(args[0]));
             clients.getClientList().forEach(System.out::println);
         } catch (XmlParseException e) {
             System.err.println("Error occured: " + e.getMessage());
