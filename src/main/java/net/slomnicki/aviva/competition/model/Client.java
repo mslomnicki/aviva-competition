@@ -2,6 +2,7 @@ package net.slomnicki.aviva.competition.model;
 
 import lombok.Data;
 
+import javax.persistence.*;
 import javax.xml.bind.annotation.*;
 import java.util.List;
 
@@ -11,22 +12,19 @@ import java.util.List;
  * @author Marek Słomnicki <marek@slomnicki.net>
  */
 @Data
+@Entity
+@Table(name="clients")
 @XmlRootElement(name = "client")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Client {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     @XmlAttribute
     private String date;
 
     @XmlElement(name = "inputParam")
+    @OneToMany(mappedBy = "client", cascade = CascadeType.ALL)
     private List<InputParam> inputParamList;
-
-    @Override
-    public String toString() {
-        StringBuffer sb = new StringBuffer();
-        sb.append("Client:").append(System.lineSeparator());
-        sb.append("\tDate: ").append(date).append(System.lineSeparator());
-        sb.append("\tInput parameters:").append(System.lineSeparator());
-        inputParamList.forEach(sb::append);
-        return sb.toString();
-    }
 }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head('Wyślij plik')"></head>
+<body>
+<div th:replace="layout :: nav"></div>
+<div th:replace="layout :: flash"></div>
+<div class="container upload">
+    <div class="row">
+        <div class="col s12">
+            <h2>Wysyłanie plików</h2>
+            <div class="subtitle">Wyślij swój plik XML, aby go dodać do bazy danych
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <form method="post" th:action="@{/upload}" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col s12">
+                <div class="file-wrapper">
+                    <input type="file" id="file" name="file"/>
+                    <span class="placeholder" data-placeholder="Wybierz plik XML...">Wybierz plik XML...</span>
+                    <label for="file" class="button">Przeglądaj</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 right-align">
+                <button type="submit" class="button">Wyślij</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div th:replace="layout :: scripts"></div>
+</body>
+</html>

@@ -2,9 +2,14 @@ package net.slomnicki.aviva.competition;
 
 import net.slomnicki.aviva.competition.error.XmlParseException;
 import net.slomnicki.aviva.competition.model.Clients;
-import net.slomnicki.aviva.competition.xml.XmlParser;
+import net.slomnicki.aviva.competition.service.XmlParser;
+import net.slomnicki.aviva.competition.service.XmlParserImpl;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.io.File;
 
@@ -13,14 +18,11 @@ import static org.junit.Assert.assertEquals;
 /**
  * @author Marek Słomnicki <marek@slomnicki.net>
  */
+@RunWith(SpringJUnit4ClassRunner.class)
 public class XmlParserTest {
 
+    @Autowired
     private XmlParser parser;
-
-    @Before
-    public void before() {
-        parser = new XmlParser();
-    }
 
     @Test
     public void parseGoodFile() throws Exception {
