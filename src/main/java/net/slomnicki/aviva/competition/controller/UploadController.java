@@ -26,7 +26,7 @@ public class UploadController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String showUploadForm() {
-        return "/form";
+        return "form";
     }
 
     @RequestMapping(method = RequestMethod.POST)
