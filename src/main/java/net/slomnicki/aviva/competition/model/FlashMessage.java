@@ -13,6 +13,6 @@ public class FlashMessage {
     private String message;
 
     public enum Status {
-        SUCCESS, FAILURE;
+        SUCCESS, FAILURE
     }
 }

@@ -54,8 +54,7 @@ public class XmlParserImpl implements XmlParser {
         // Create XML parser for Clients class and subclasses
         JAXBContext jaxbContext = JAXBContext.newInstance(Clients.class);
         Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-        // Parse file
-        Clients clients = (Clients) jaxbUnmarshaller.unmarshal(is);
-        return clients;
+        // Parse file and return clients
+        return (Clients) jaxbUnmarshaller.unmarshal(is);
     }
 }
