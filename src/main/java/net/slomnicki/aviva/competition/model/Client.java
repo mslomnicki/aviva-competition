@@ -22,7 +22,7 @@ public class Client {
 
     @Override
     public String toString() {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         sb.append("Client:").append(System.lineSeparator());
         sb.append("\tDate: ").append(date).append(System.lineSeparator());
         sb.append("\tInput parameters:").append(System.lineSeparator());

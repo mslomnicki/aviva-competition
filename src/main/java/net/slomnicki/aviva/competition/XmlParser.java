@@ -18,7 +18,7 @@ public class XmlParser {
      * Read and parse XML file
      * @param file input XML file
      * @return clients from XML file
-     * @throws XmlParseException
+     * @throws XmlParseException exception is thrown when any problem with parsing is encountered
      */
     public Clients readAndParseXmlFile(File file) throws XmlParseException {
         // Loading XML file
@@ -26,9 +26,8 @@ public class XmlParser {
             // Create XML parser for Clients class and subclasses
             JAXBContext jaxbContext = JAXBContext.newInstance(Clients.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-            // Parse file
-            Clients clients = (Clients) jaxbUnmarshaller.unmarshal(is);
-            return clients;
+            // Parse file and return data
+            return (Clients) jaxbUnmarshaller.unmarshal(is);
         } catch (FileNotFoundException e) {
             throw new XmlParseException("File " + file + " not found...");
         } catch (IOException e) {
