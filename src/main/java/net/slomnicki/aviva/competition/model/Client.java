@@ -25,6 +25,7 @@ public class Client {
     private String date;
 
     @XmlElement(name = "inputParam")
-    @OneToMany(mappedBy = "client", cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "client_id")
     private List<InputParam> inputParamList;
 }

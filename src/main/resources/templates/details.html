@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head('Dane klienta')"></head>
+<body>
+<div th:replace="layout :: nav"></div>
+<div th:replace="layout :: flash"></div>
+<div class="container">
+    <div class="col s12" th:text="|Data: ${client.date}|">Data</div>
+    <div class="divider"/>
+
+    <span><h2>Parametry:</h2></span>
+    <table class="highlight">
+        <thead>
+        <tr>
+            <th data-field="id">Pole</th>
+            <th data-field="date">Wartość</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="item : ${client.inputParamList}">
+            <td th:text="${item.name}">Name</td>
+            <td th:text="${item.value}">Value</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div th:replace="layout :: scripts"></div>
+</body>
+</html>

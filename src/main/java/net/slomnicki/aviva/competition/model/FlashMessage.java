@@ -9,6 +9,10 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class FlashMessage {
-    private String status;
+    private Status status;
     private String message;
+
+    public enum Status {
+        SUCCESS, FAILURE;
+    }
 }
