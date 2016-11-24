@@ -3,7 +3,10 @@ package net.slomnicki.aviva.competition.model;
 import lombok.Data;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import java.util.List;
 
 /**
@@ -13,8 +16,7 @@ import java.util.List;
  */
 @Data
 @Entity
-@Table(name="clients")
-@XmlRootElement(name = "client")
+@Table(name = "clients")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Client {
     @Id

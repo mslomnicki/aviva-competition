@@ -6,7 +6,6 @@ import javax.persistence.*;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * POJO class that maps InputParam XML tag
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author Marek Słomnicki <marek@slomnicki.net>
  */
 @Data
-@XmlRootElement(name = "inputParam")
 @Entity
 @Table(name = "client_params")
 @XmlAccessorType(XmlAccessType.FIELD)
