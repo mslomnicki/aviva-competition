@@ -2,7 +2,10 @@ package net.slomnicki.aviva.competition.model;
 
 import lombok.Data;
 
-import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import java.util.List;
 
 /**
@@ -11,7 +14,6 @@ import java.util.List;
  * @author Marek Słomnicki <marek@slomnicki.net>
  */
 @Data
-@XmlRootElement(name = "client")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Client {
     @XmlAttribute
